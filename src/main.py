@@ -19,8 +19,8 @@ from module.exec.counterexample.termination_without_redundant.termination_withou
 
 if __name__ == "__main__":
 
-    agent_class = IdbAgent
-    exec_collection = TerminationWithoutRedundantExec(agent_class)
+    agent_class = ModifiedAgent
+    exec_collection = TerminationExec(agent_class)
     obj = ExecutionManager(exec_collection.init_agents,
                         exec_collection.init_functions,
                         exec_collection.exec_cycle)
