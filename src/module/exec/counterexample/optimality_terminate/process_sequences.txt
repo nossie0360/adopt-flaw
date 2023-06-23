@@ -1,0 +1,67 @@
+# Common process sequence (e.g., Original ADOPT.)
+
+        process_sequence: list[list[MsgClassifyAgentWrapper, list[MsgClassifyAgentWrapper],
+                                    int, int]] = [
+            [agents[4], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[1], [], None, None],
+            [agents[0], [], None, None],
+            [agents[3], [], None, None],
+            [agents[4], [], None, None],
+            [agents[0], [], None, None],
+            [agents[1], [], None, None],
+            [agents[2], [agents[3]], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [agents[0]], None, None],
+            [agents[2], [], None, None],
+            [agents[1], [], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None]
+        ]
+
+
+# BnB-ADOPT and BnB-ADOPT+
+
+        process_sequence: list[list[MsgClassifyAgentWrapper, list[MsgClassifyAgentWrapper],
+                                    int, int]] = [
+            [agents[4], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[1], [], None, None],
+            [agents[0], [], None, None],
+            [agents[3], [], None, None],
+            [agents[4], [], None, None],
+            [agents[0], [], None, None],
+            [agents[1], [], None, None],
+            [agents[2], [agents[1]], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None]
+        ]
+
+
+# ADOPT-ing
+
+        process_sequence: list[list[MsgClassifyAgentWrapper, list[MsgClassifyAgentWrapper],
+                                    int, int]] = [
+            [agents[4], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None],
+            [agents[2], [], None, None],
+            [agents[1], [], None, None],
+            [agents[0], [], None, None],
+            [agents[3], [], None, None],
+            [agents[4], [], None, None],
+            [agents[0], [], None, None],
+            [agents[1], [], None, None],
+            [agents[2], [agents[0], agents[1]], None, None],
+            [agents[3], [agents[0]], None, None],
+            [agents[2], [agents[0]], None, None],
+            [agents[2], [], None, None],
+            [agents[3], [], None, None]
+        ]
