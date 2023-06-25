@@ -3,7 +3,7 @@ from ....agents.i_agent import IAgent
 from ....util.function import Function
 
 class InitFunctions(IInitFunctions):
-    c = 0 # 10      # constant for non-zero costs
+    c = 10 # 10      # constant for non-zero costs
 
     def getFunctions(self, agents: list[IAgent]) -> list[Function]:
         functions=[
@@ -17,8 +17,8 @@ class InitFunctions(IInitFunctions):
             Function(agents[5], agents[6], lambda x,y: 0 + InitFunctions.c),
             Function(agents[1], agents[6],
                      lambda x,y: 2 + InitFunctions.c if x==0 else 3 + InitFunctions.c),
-            Function(agents[2], agents[7], lambda x,y: 0),
-            Function(agents[7], agents[8], lambda x,y: 0),
+            Function(agents[2], agents[7], lambda x,y: 0 + InitFunctions.c),
+            Function(agents[7], agents[8], lambda x,y: 0 + InitFunctions.c),
             Function(agents[2], agents[8],
                      lambda x,y: 5 + InitFunctions.c if x==0 else 6 + InitFunctions.c),
             Function(agents[2], agents[9], lambda x,y: 0 + InitFunctions.c),
