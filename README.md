@@ -4,7 +4,7 @@ counterexamples to ADOPT-based algorithms
 and the modified version of ADOPT,
 both of which are shown in the following paper.
 See the paper for more details.
-> Koji Noshiro and Koji Hasebe. Flaws of Termination and Optimality in ADOPT-based Algorithms, 32nd International Joint Conference on Artificial Intelligence (IJCAI-23), 8 pages, August 2023. (to appear)
+> Koji Noshiro and Koji Hasebe. Flaws of Termination and Optimality in ADOPT-based Algorithms, 32nd International Joint Conference on Artificial Intelligence (IJCAI-23), 8 pages, August 2023.
 
 ## Prequisities
 * Python 3.9.13 or later
@@ -17,7 +17,7 @@ See the paper for more details.
 
 1. Move to the cloned directory.
     ```
-    $ mv adopt-flaw
+    $ cd adopt-flaw
     ```
 
 1. Install the required packages.
